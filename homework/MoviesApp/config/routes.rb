@@ -15,7 +15,8 @@ MoviesApp::Application.routes.draw do
   # DELETE
   delete '/theaters/:id', controller: 'theaters', action: 'destroy'
   #------------------------------
-
+#post
+  post "/theaters", controller: 'theaters', action: 'create'
 # Routes for the Movie resource:
 
  get '/movies/new', controller: 'movies', action: 'new'
